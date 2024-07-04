@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="surveyForm.css">
+</head>
+<body>
+<h1 id="title">Electoral Survey Form</h1>
+<p id="description">This is a survey of the 2024 election</p>
+
+<form id="survey-form">
+    <fieldset>
+
+        <label for="name" id="name-label">Name
+            <input id="name" type="text" placeholder="Enter your full name" required/>
+        </label>
+
+
+        <label id="email-label" for="email">Email
+            <input id="email" type="email" placeholder="Enter your email" required/>
+        </label>
+
+
+        <label id="number-label" for="number">Age
+            <input id="number" type="number" min="16" max="120" placeholder="Age" required/>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <label for="dropdown">Who Did You Vote For?
+            <select id="dropdown" name="dropdown">
+                <option value="">select a party</option>
+                <option value="1">Liberal Democrats</option>
+                <option value="2">Conservatives</option>
+                <option value="3">Heritage Party</option>
+                <option value="4">Alba</option>
+                <option>Other...</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Did you find the process easy?</legend>
+        <label><input value="yes" name="process" class="inline" type="radio" checked/>YES</label>
+        <label><input value="no" name="process" class="inline" type="radio">NO</label>
+        <label><input value="maybe" name="process" class="inline" type="radio">MAYBE</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>What would you like to see improved?(select at least one)</legend>
+        <label><input class="inline" type="checkbox" value="communication"/>Communication</label>
+        <label><input class="inline" type="checkbox" value="Election security"/>Election Security</label>
+        <label><input class="inline" type="checkbox" value="Inclusivity"/>Inclusivity</label>
+        <label><input class="inline" type="checkbox" value="Technology"/>Technology</label>
+    </fieldset>
+
+    <fieldset>
+
+        <legend for="bio">ANY OTHER COMMENTS AND SUGGESTIONS?</legend>
+        <label>
+            <textarea placeholder="Enter your comment here..." rows="6" cols="60"></textarea>
+        </label>
+    </fieldset>
+
+    <input type="submit" value="Submit" id="submit"/>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body{
+    width:100%;
+    height:100vh;
+    margin: 0;
+    background-color: indianred;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+h1, p{
+    margin: 1em auto;
+    text-align: center;
+}
+
+p{
+    font-style: italic;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+form{
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width:60vw;
+    padding: 2em;
+}
+
+input[type="sumbit"]{
+    display: block;
+    width:60vw;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color:#3b3b4f;
+    border-color:#ffffff;
+    min-width: 300px;
+    padding: 1px 2px;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+input, textarea, select{
+    margin-top:10px;
+    margin-bottom:0;
+    margin-left:0;
+    margin-right:0;
+    width:100%;
+    height: 2.57rem;
+    font-size: 1.1rem;
+}
+select{
+    background-color: rgb(227, 174, 177);
+}
+.inline {
+    width: unset;
+    margin-right:0.5em;
+    margin-left:0;
+    margin-top:0;
+    margin-bottom:0;
+    vertical-align: middle;
+}
+
+input, textarea{
+    background-color:rgb(227, 174, 177);
+    border: 1px solid rgb(227, 174, 177);
+    color: #ffffff;
+    min-height:2em;
+}
